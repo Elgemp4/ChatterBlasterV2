@@ -208,10 +208,10 @@ footer .footer-infos {
 
 .product {
   display: grid;
-  grid-template-columns: 5fr 4fr;
+  grid-template-columns: 4fr 3fr;
   padding: 2rem;
   padding-block: 4rem;
-  gap: 2rem;
+  gap: 4rem;
 }
 @media screen and (max-width: 720px) {
   .product {
@@ -227,7 +227,7 @@ footer .footer-infos {
 }
 @media screen and (min-width: 720px) {
   .product:nth-child(2n+1) {
-    grid-template-columns: 4fr 5fr;
+    grid-template-columns: 3fr 4fr;
     background: #f3f2ff;
   }
   .product:nth-child(2n+1) img {
