@@ -1,0 +1,53 @@
+@use 'colors'
+@use 'variables'
+    
+.value
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &-title
+        margin-bottom: calc(variables.$spacing *4)
+        font-size: 5rem
+        margin-inline: auto
+        text-align: center
+        max-width: 50rem
+
+
+    &-list
+        width: 40rem
+        list-style: none
+
+        counter-reset: count
+
+    &-element
+        counter-increment: count
+        position: relative
+        margin-left: 3rem
+
+        &::before
+            content: counter(count)
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            top: -.5rem
+            left: -4rem
+            color: colors.$accent
+            border: 1px solid colors.$accent
+            border-radius: 100%
+            aspect-ratio: 1/1
+            font-size: 1.25rem
+            width: 2.5rem
+            height: 2.5rem
+            background: white
+            z-index: 2
+
+        &:not(.value-element:last-of-type)::after
+            content: ""
+            position: absolute
+            background: colors.$accent
+            height: 100%
+            width: 1px
+            top: .5rem
+            left: -2.7rem

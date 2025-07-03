@@ -1,0 +1,48 @@
+@use "variables"
+@use "colors"
+    
+header
+    display: flex
+    align-items: center
+    gap: variables.$spacing
+    padding-inline: variables.$spacing
+    margin-bottom: calc( variables.$spacing * 3  )
+
+    a
+        text-decoration: none
+        color: colors.$dark
+
+
+        &:hover
+            text-decoration: underline
+
+    nav
+        display: flex
+        gap: variables.$spacing
+
+
+    @media screen and (max-width: variables.$tablet) 
+        .header-links
+            display: none
+        
+        nav
+            display: none
+
+        &:has(.menu-trigger:checked)
+            nav
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: flex-end
+                padding: calc(variables.$spacing)
+                gap: variables.$spacing
+                position: fixed
+                background: colors.$dark
+                inset: 0
+
+            a
+                color: white
+                font-size: 3rem
+
+    .header-links
+        margin-left: auto

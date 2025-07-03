@@ -1,0 +1,62 @@
+@use "variables"
+@use "colors"
+    
+.pricings
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: variables.$spacing
+
+    &-title
+        margin-bottom: calc(variables.$spacing *4)
+        font-size: 5rem
+        text-align: center
+        max-width: 50rem
+
+    &-description
+        font-family: 'Courier New', Courier, monospace
+        margin-bottom: calc(variables.$spacing * 2)
+
+
+    &-list
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        width: 100%
+        gap: variables.$spacing
+
+    @media screen and (max-width: 1100px) 
+        &-list
+            grid-template-columns: 1fr
+
+    &-card
+        border: 1px solid colors.$dark
+        padding: calc(variables.$spacing / 2)
+        border-radius: .4rem
+
+        &-title
+            margin-block: 0
+            font-size: 2rem
+
+        &-subtitle
+            font-size: 1.5rem
+            margin: 0
+
+        &-per-second
+            font-weight: bold
+            margin-top: 2rem
+            margin-bottom: 0
+            
+        &-price
+            margin: 0
+            margin-bottom: 3.5rem
+            font-size: 2.5rem
+            font-weight: 700
+
+        &-advantages
+            margin-top: calc(variables.$spacing * 2) 
+            list-style-image: url("../assets/icons/check-circle.svg")
+            display: flex
+            flex-direction: column
+            gap: calc(variables.$spacing /2)
+            & li
+                font-size: 1.5rem

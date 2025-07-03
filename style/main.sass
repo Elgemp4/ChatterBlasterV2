@@ -1,0 +1,27 @@
+@use "colors"
+@use "variables"
+@use "button"
+@use "menu"
+@use "header"
+@use "footer"
+@use "hero"
+@use "pricings"
+@use "product"
+@use "team"
+@use "value"
+
+*, *::before, *::after
+    box-sizing: border-box
+
+body
+    margin: 0
+    padding: 0
+    min-height: 100dvh
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-seri
+    color: colors.$dark
+    display: grid
+    grid-template-rows: auto 1fr auto
+
+    max-width: 1000px
+    margin: auto
+

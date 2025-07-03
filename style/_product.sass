@@ -1,0 +1,69 @@
+@use "variables"
+@use "colors"
+    
+.products
+
+    &-title
+        font-size: 5rem
+        text-align: center
+        margin-block: variables.$spacing
+        margin-bottom: calc(variables.$spacing *4)
+
+
+
+
+.product
+    display: grid
+    grid-template-columns: 5fr 4fr
+    padding: variables.$spacing
+    padding-block: calc(variables.$spacing * 2)
+    gap: variables.$spacing
+
+
+    @media screen and (max-width: variables.$tablet)
+        grid-template-columns: 1fr 
+
+
+    ul
+        margin: 0
+        margin-top: variables.$spacing
+
+    &-links
+        margin-top: calc(variables.$spacing * 1.5)
+    
+    @media screen and (min-width: variables.$tablet)
+        &:nth-child(2n + 1) 
+            grid-template-columns: 4fr 5fr
+            background: lighten(colors.$accent, 28)
+
+            img
+                grid-column: 1
+                grid-row: 1
+
+            div
+                grid-column: 2
+                grid-row: 1
+
+    &-advantages
+        margin-top: calc(variables.$spacing * 2) 
+        list-style-image: url("../assets/icons/check-circle.svg")
+        display: flex
+        flex-direction: column
+        gap: calc(variables.$spacing /2)
+
+
+    &-title
+        color: colors.$accent
+        letter-spacing: .2rem
+        font-size: 2rem
+        margin-block: 0
+
+    &-subtitle
+        font-size: 4rem
+        margin-block: variables.$spacing
+        line-height: 4.5rem
+        margin-bottom: calc(variables.$spacing * 1.5)
+
+
+    &-img
+        width: 100%

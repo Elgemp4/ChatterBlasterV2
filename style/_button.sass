@@ -1,0 +1,20 @@
+@use "variables"
+@use "colors"
+    
+.button
+    padding-inline: calc(variables.$spacing / 2)
+    padding-block: calc(variables.$spacing / 4)
+    border-radius: 1rem
+    transition: filter 1s
+    text-decoration: none
+
+    &-secondary
+        border: 1px solid colors.$dark
+        color: colors.$dark
+
+    &-primary
+        background: colors.$dark
+        color: white
+
+    &:hover
+        filter: brightness(.7)
