@@ -110,6 +110,14 @@ footer .footer-infos {
   align-items: center;
   gap: 2rem;
 }
+footer .footer-infos > a {
+  text-decoration: none;
+  color: #2F2E41;
+}
+footer .footer-infos > a:hover {
+  text-decoration: underline;
+  color: #6C63FF;
+}
 
 .hero {
   display: grid;
