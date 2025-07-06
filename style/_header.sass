@@ -1,6 +1,9 @@
 @use "variables"
 @use "colors"
     
+
+
+//Styling for the header of the website
 header
     display: flex
     align-items: center
@@ -23,7 +26,7 @@ header
         display: flex
         gap: variables.$spacing
 
-
+    //Hide the navigation when in tablet mode and show menu button
     @media screen and (max-width: variables.$tablet) 
         .header-links
             display: none
@@ -31,6 +34,8 @@ header
         nav
             display: none
 
+
+        //If menu button is clicked then show the menu
         &:has(.menu-trigger:checked)
             nav
                 display: flex
