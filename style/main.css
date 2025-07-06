@@ -104,6 +104,18 @@ header .header-links {
 footer {
   background: white;
   padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-socials {
+  gap: 2rem;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+}
+footer .footer-socials img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 footer .footer-infos {
   display: flex;
