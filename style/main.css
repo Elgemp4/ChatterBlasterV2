@@ -313,6 +313,8 @@ footer .footer-infos > a:hover {
   flex-wrap: wrap;
   gap: 4rem;
   justify-content: center;
+  max-width: 1000px;
+  margin-inline: auto;
 }
 .team-title {
   margin-bottom: 8rem;
