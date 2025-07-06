@@ -97,6 +97,8 @@ header nav {
 }
 header .header-links {
   margin-left: auto;
+  display: flex;
+  gap: 1rem;
 }
 
 footer {
@@ -113,7 +115,7 @@ footer .footer-infos {
   display: grid;
   grid-template-columns: 3fr 2fr;
   padding: 2rem;
-  margin-bottom: 16rem;
+  gap: 2rem;
 }
 .hero-title {
   color: #6C63FF;
@@ -130,17 +132,13 @@ footer .footer-infos {
 }
 .hero-more {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   align-items: center;
 }
 .hero-more .button {
   padding-block: 1rem;
   padding-inline: 2rem;
 }
-.hero-desc {
-  font-family: "Courier New", Courier, monospace;
-}
-
 .pricings {
   display: flex;
   flex-direction: column;
@@ -154,7 +152,6 @@ footer .footer-infos {
   max-width: 50rem;
 }
 .pricings-description {
-  font-family: "Courier New", Courier, monospace;
   margin-bottom: 4rem;
 }
 .pricings-list {
@@ -170,7 +167,7 @@ footer .footer-infos {
 }
 .pricings-card {
   border: 1px solid #2F2E41;
-  padding: 1rem;
+  padding: 1.3333333333rem;
   border-radius: 0.4rem;
 }
 .pricings-card-title {
@@ -289,8 +286,8 @@ footer .footer-infos {
 .team-card-subtitle {
   margin-block: 0;
   margin-top: 0.25rem;
-  font-weight: 400;
-  font-family: "Courier New", Courier, monospace;
+  font-weight: 200;
+  font-size: 1rem;
 }
 .team-card-img {
   width: 100%;
