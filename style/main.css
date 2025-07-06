@@ -105,6 +105,7 @@ footer {
   background: white;
   padding: 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 footer .footer-socials {
@@ -131,6 +132,15 @@ footer .footer-infos > a:hover {
   color: #6C63FF;
 }
 
+@media screen and (max-width: 720px) {
+  .hero {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 2.5rem !important;
+  }
+}
 .hero {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -159,6 +169,7 @@ footer .footer-infos > a:hover {
   padding-block: 1rem;
   padding-inline: 2rem;
 }
+
 .pricings {
   display: flex;
   flex-direction: column;
@@ -227,6 +238,15 @@ footer .footer-infos > a:hover {
   margin-bottom: 8rem;
 }
 
+@media screen and (max-width: 720px) {
+  .products-title {
+    font-size: 3.5rem !important;
+  }
+  .product-subtitle {
+    font-size: 3rem !important;
+    line-height: 3.5rem !important;
+  }
+}
 .product {
   display: grid;
   grid-template-columns: 4fr 3fr;
@@ -283,6 +303,11 @@ footer .footer-infos > a:hover {
   width: 100%;
 }
 
+@media screen and (max-width: 360px) {
+  .team-title {
+    font-size: 3.5rem !important;
+  }
+}
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -323,6 +348,7 @@ footer .footer-infos > a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 .value-title {
   margin-bottom: 8rem;
@@ -332,7 +358,7 @@ footer .footer-infos > a:hover {
   max-width: 50rem;
 }
 .value-list {
-  width: 40rem;
+  max-width: 40rem;
   list-style: none;
   counter-reset: count;
 }
@@ -369,6 +395,11 @@ footer .footer-infos > a:hover {
   left: -2.7rem;
 }
 
+@media screen and (max-width: 720px) {
+  .additional {
+    display: none !important;
+  }
+}
 .additional {
   display: flex;
   gap: 2rem;

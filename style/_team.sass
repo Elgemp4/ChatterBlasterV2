@@ -2,12 +2,19 @@
 @use "variables"
     
 
+@media screen and (max-width: variables.$mobile) 
+    .team-title
+        font-size: 3.5rem !important
+
 //The styling for the presentation of the member of the team
 .team
     display: flex
     flex-wrap: wrap
     gap: calc(variables.$spacing *2 )
     justify-content: center
+
+    
+
 
     &-title
         margin-bottom: calc(variables.$spacing *4)

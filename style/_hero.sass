@@ -1,6 +1,13 @@
 @use "variables"
 @use "colors"
 
+@media screen and (max-width: variables.$tablet) 
+    .hero
+        grid-template-columns: 1fr !important
+        gap: variables.$spacing
+        &-subtitle
+            font-size: 2.5rem !important
+
 //Styling for the page hero
 .hero
     display: grid
@@ -32,5 +39,3 @@
         & .button
             padding-block: 1rem
             padding-inline: 2rem
-
-    &-desc
