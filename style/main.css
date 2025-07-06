@@ -349,6 +349,34 @@ footer .footer-infos {
   left: -2.7rem;
 }
 
+.additional {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin-block: 4rem;
+}
+.additional > img {
+  width: 2rem;
+  height: 2rem;
+}
+.additional-card {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.additional-card > img {
+  background: #2F2E41;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.8rem;
+  border-radius: 100%;
+}
+.additional-card p {
+  font-size: 1.3rem;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }

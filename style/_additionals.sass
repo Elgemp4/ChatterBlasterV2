@@ -1,0 +1,30 @@
+@use "variables"
+@use "colors"
+    
+.additional
+    display: flex
+    gap: variables.$spacing
+    justify-content: space-between
+    align-items: center
+    padding: variables.$spacing
+    margin-block: calc(variables.$spacing * 2)
+
+    & > img
+        width: 2rem
+        height: 2rem
+
+    &-card
+
+        display: flex
+        gap: variables.$spacing
+        align-items: center
+
+        & > img
+            background: colors.$dark
+            width: 3rem
+            height: 3rem
+            padding: .8rem
+            border-radius: 100%
+
+        & p
+            font-size: 1.3rem
